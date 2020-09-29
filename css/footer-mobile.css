@@ -1,0 +1,87 @@
+.footer-mobile_wrapper {
+    max-width: 767px;
+    width: 100%;
+}
+
+.footer-mobile {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+li {
+    width: 100%
+}
+
+label {
+    width: 100%
+}
+
+
+/* demo контейнер */
+
+.demo {
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 5% 10%;
+}
+
+
+/* скрываем чекбоксы и блоки с содержанием */
+
+.hide,
+.hide+label~div {
+    display: none;
+}
+
+
+/* вид текста label */
+
+.hide+label {
+    margin: 0;
+    padding: 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+/* вид текста label при активном переключателе */
+
+.hide:checked+label {
+    color: red;
+    border-bottom: 0;
+}
+
+
+/* когда чекбокс активен показываем блоки с содержанием  */
+
+.hide:checked+label+div {
+    display: block;
+    background: #efefef;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.hide+label:before {
+    background-color: none;
+    color: black;
+    content: "\002B";
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.hide:checked+label:before {
+    content: "\2212";
+}

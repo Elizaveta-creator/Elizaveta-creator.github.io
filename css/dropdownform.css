@@ -1,0 +1,45 @@
+.dropdown-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.selected-items {
+    border: 1px solid #CCC;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.items {
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+
+.items input[type="text"] {
+    width: 20px;
+}
+
+.items .title {
+    display: inline-block;
+    width: 150px;
+}
+
+.item {
+    padding: 5px 0px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px;
+    width: 20px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #8BA4F9;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

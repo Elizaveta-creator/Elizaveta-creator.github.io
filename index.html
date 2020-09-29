@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    </link>
+    <link rel="stylesheet" src="css/footer-mobile.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script src="js/humMenu.js"></script>
+
+    <title>project site</title>
+</head>
+
+<body>
+    <header class="header header__wrapper">
+
+        <div class="navigation navigation_pos">
+            <ul class="navigation__ul navigation__ul_pos">
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li class="navigation__li1"><a href="#">Проектирование</a></li>
+                <li><a href="#">Презентация</a></li>
+                <li> <a href="#">Застройщикам</a></li>
+                <li> <a href="#">Гос.заказчикам</a></li>
+                <li class="navigation__li1"> <a href="#">Таблет-питание</a></li>
+                <li><a href="#">Сервис</a></li>
+                <li> <a href="#">Контакты</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a class="navigation__small" href="mailto:info@stolovaya.ru"><img class="navigation__mail"
+                            src="img/mail.png" alt="mail">info@stolovaya.ru</a></li>
+                <li><a class="navigation__small" href="tel:8 800 333-88-31"><img class="navigation__phone"
+                            src="img/phone.png" alt="phone">8 800 333-88-31</a></li>
+                <li><a class="navigation__small" href="tel:8 800 333-88-31"><img class="navigation__mobilephone"
+                            src="img/phone.png" alt="phone"></a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="header-content header-content_pos">
+            <div class="logo logo_pos">
+                <img class="logo__img" src="img/logo1.png">
+            </div>
+            <div class="stuck-head stuck-head_pos">
+                <a class="nav-btn" id="nav-open" href="#sidebar" menu><span>menu</span></a>
+            </div>
+
+
+
+            <div id="menumobile">
+                <nav class="navigationmobile navigationmobile_pos">
+                    <ul>
+                        <li><a href="#">Компания</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Проектирование</a></li>
+                        <li class="navigationmobile__under"><a href="#">Презентация</a></li>
+                        <li><a href="#">Застройщикам</a></li>
+                        <li><a href="#">Гос заказчикам</a></li>
+                        <li class="navigationmobile__under"><a href="#">Таблет-питание</a></li>
+                        <li><a href="#">Сервис</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="logo-mob logo-mob_pos">
+                <img class="logo-mob__img" src="img/logo-mob.png">
+            </div>
+
+
+            <div class="search-find search-find_pos">
+                <div class="search-find__categories">
+                    <div class="categories-text" onclick="menuToggle()">Все</div>
+
+
+
+                    <div class="search-select" style="display: block;">
+
+                        <ul id="menuDrop" class="dropdown-positions">
+                            <span class="dropdown-positions__span">Выберете категорию:</span>
+                            <li>Все</li>
+
+                            <li>Весовое</li>
+                            <li>Для магазинов</li>
+                            <li>Для обеденных залов</li>
+                            <li>Нейтральное</li>
+                            <li>Для бара</li>
+                            <li>Для фаст-фуд</li>
+                            <li>Посудомоечное</li>
+                            <li>Тепловое</li>
+                            <li>Термоподносы</li>
+                            <li>Хлебопекарное</li>
+                            <li>Холодильное</li>
+                            <li>Электромеханическое</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="search-find__delivery">
+                    <input name="s" autocomplete="off" type="text">
+                    <div class="search-result">
+                    </div>
+                </div>
+                <div class="search-find__btn">
+                    <button type="submit"></button>
+                </div>
+            </div>
+
+
+
+
+            <!--ДЛЯ ТЕЛЕФОНОВ-->
+            <div class="buttons-mob buttons-mob_pos">
+
+                <div class="search-mobile search-mobile_pos">
+                    <button onclick="mobSearch()" class="search-mobile__loop"><img class="search-mobile__img"
+                            src="img/search.png" alt="loop-img"></button>
+
+                    <form id="dropSearch" class="search-mobile__content search-mobile__content_pos">
+
+                        <input class="search-mobile__text" type="text" placeholder="find">
+                        <input class="search-mobile__sub" type="submit">
+                    </form>
+
+
+
+                </div>
+
+
+
+                <div class="mob-mobile mob-mobile_pos">
+                    <button onclick="myFunction()" class="mob-mobile__dropbtn"></button>
+                    <ul id="myDropdown" class="mob-mobile__content mob-mobile__content_pos">
+                     <li><a href="teplovoye">8 800 333-88-31</a></li>
+                                        <li class="mob-mobile__content-underline"><a href="teplovoye">Звонок бесплатный</a></li>
+                                        <li><a href="teplovoye">Пн-Пт</a></li>
+                                       <li class="mob-mobile__content-underline"><a href="teplovoye">09:00 до 18:00</a></li>
+                                        <li class="mob-mobile__content-underline"><a href="teplovoye">info@stolovay.ru</a></li>
+                                        <li><a href="teplovoye">109428,Москва,</a></li>
+                                        <li><a href="teplovoye">Большая Семеновская 43с2 </a></li>
+                    </ul>
+                  </div>
+                  <button class="basket-mobile basket-mobile_pos">
+                    <p class="basket-mobile__ammount">0</p>
+                    <img class="basket-mobile__img" src="img/card.png" alt="card-img">
+                </button>
+            </div>
+
+
+
+
+            <div class="we we_pos">
+                <img class="we__img" src="img/suppliers.png" alt="we">
+                <pre class="we__text">Мы на портале 
+поставщиков</pre>
+            </div>
+
+            <button class="basket basket_pos">
+                <div class="basket-img">
+                    <p class="basket-img__ammount">0</p>
+                    <img class="basket-img__img" src="img/basket-img.png" alt="basket">
+                </div>
+                <div class="basket-total">
+                    <p class="basket-total_sum">Сумма</p>
+                    <p class="basket-total_rub">0 руб.</p>
+                </div>
+            </button>
+
+
+        </div>
+
+
+
+    </header>
+
+      
+      
+
+    <div class="variants variants_pos">
+          
+        <div class="categories-item">
+          <div class="categories">
+          <img src="img/categories-1.png" class="categories__image">
+            <div rel='m1' class="categories__knop k1">Тепловое</div>
+          </div>
+          <div class="categories">
+          <img src="img/categories-2.png" class="categories__image">
+            <div rel='m2' class="categories__knop k2">Холодильное</div>
+          </div>
+          
+           <div class="categories">
+          <img src="img/categories-3.png" class="categories__image">
+            <div rel='m3' class="categories__knop k3">Электромеханическое</div>
+        </div> 
+          
+          
+           <div class="categories">
+          <img src="img/categories-4.png" class="categories__image">
+            <div rel='m4' class="categories__knop k4">Посудомоечное</div>
+        </div> 
+          
+           <div class="categories">
+          <img src="img/categories-5.png" class="categories__image">
+            <div rel='m5' class="categories__knop k5">Хлебопекарное</div>
+        </div> 
+          
+          
+           <div class="categories">
+          <img src="img/categories-6.png" class="categories__image">
+            <div rel='m6' class="categories__knop k6">Линии раздачи</div>
+        </div> 
+          
+           <div class="categories">
+          <img src="img/categories-7.png" class="categories__image">
+            <div rel='m7' class="categories__knop k7">Нейтральное</div>
+        </div> 
+          
+          
+           <div class="categories">
+          <img src="img/categories-8.png" class="categories__image">
+            <div rel='m8' class="categories__knop k8">Для фаст фуда</div>
+        </div> 
+          
+          
+           <div class="categories">
+          <img src="img/categories-9.png" class="categories__image">
+            <div rel='m9' class="categories__knop k9">Для залов</div>
+        </div> 
+          
+          
+          
+           <div class="categories">
+          <img src="img/categories-10.png" class="categories__image">
+            <div rel='m10' class="categories__knop k10">Вспомогательное</div>
+        </div> 
+          
+          
+          
+           <div class="categories">
+          <img src="img/categories-111.png" class="categories__image">
+            <div rel='m11' class="categories__knop k11">Для магазинов</div>
+        </div> 
+          
+           </div>   
+             
+          
+        <ul class="dropdown-menu m1 dropdown-menu_pos">
+            <li> <a href=" #home ">Пароконвектоматы </a></li>
+                            <li><a href="#about ">Ковекционные печи </a></li>
+                            <li> <a href="#contact ">Плиты </a></li>
+                            <li><a href="#home ">Шкафы жарочные </a></li>
+                            <li> <a href="#about ">Котлы </a></li>
+                            <li> <a href="#contact ">Фритюрницы </a></li>
+                            <li><a href="#home ">Кипятильники </a></li>
+                            <li><a href="#about ">Водонагреватели </a></li>
+                            <li><a href="#contact ">Столы тепловые </a></li>
+                            <li><a href="#home ">Мармиты </a></li>
+                            <li><a href="#about ">Сковороды </a></li>
+                            <li><a href="#contact ">Казаны </a></li>
+                            <li><a href="#home ">Полки тепловые </a></li>
+                            <li><a href="#about ">Аппараты контактной обработки </a></li>
+          </ul>    
+       
+          
+          
+          <ul class="dropdown-menu m2 dropdown-menu_pos">
+            <li> <a href=" #home ">Холодильные шкафы </a></li>
+                            <li><a href="#about ">Камеры холодильные</a></li>
+                            <li> <a href="#contact ">Моноблоки</a></li>
+                            <li><a href="#home ">Сплит-системы </a></li>
+                            <li> <a href="#about ">Столы холодильные </a></li>
+                            <li> <a href="#contact ">Витрины холодильные </a></li>
+                            <li><a href="#home ">Горки холодильные </a></li>
+                            <li><a href="#about ">Бонеты </a></li>
+                            <li><a href="#contact ">Лари морозильные</a></li>
+                            <li><a href="#home ">Льдогенераторы</a></li>
+                            <li><a href="#about ">Шкафы шоковой заморозки</a></li>
+                            <li><a href="#contact ">Кегераторы</a></li>
+                            <li><a href="#home ">Холодильные агрегаты </a></li>
+       
+          
+          </ul>
+        
+       
+          
+          <ul class="dropdown-menu m3 dropdown-menu_pos">
+            <li> <a href="#home ">Овощерезки</a></li>
+                            <li><a href="#about ">Машины для мойки овощей </a></li>
+                            <li><a href="#contact ">Протирочные машины</a></li>
+                            <li><a href="#home ">Хлеборезки </a></li>
+                            <li><a href="#about ">Мясорубки </a></li>
+                            <li><a href="#contact ">Картофелечстки </a></li>
+                            <li><a href="#home ">Универсальные кухонные машины</a></li>
+                            <li><a href="#about ">Куттеры</a></li>
+                            <li><a href="#contact ">Кухонный процессор</a></li>
+                            <li><a href="#home ">Бликсер</a></li>
+                            <li><a href="#about ">Ручные миксеры</a></li>
+                            <li><a href="#contact ">Транспортер для сбора грязной посуды</a></li>
+            
+            
+        </ul>
+          
+          
+          <ul class="dropdown-menu m4 dropdown-menu_pos">
+            <li> <a href=" #home ">Фронтальные машины</a></li>
+                            <li><a href="#about ">Купольные машины </a></li>
+                            <li> <a href="#contact ">Туннельные машины </a></li>
+                            <li><a href="#home ">Котломоечные машины</a></li>
+                            <li> <a href="#about ">Стаканомоечные машины</a></li>
+           </ul> 
+          
+          
+          
+                <ul class="dropdown-menu m5 dropdown-menu_pos">
+                   <li> <a href=" #home ">Мукопросеиватели </a></li>
+                            <li><a href="#about ">Печи для пиццы </a></li>
+                            <li> <a href="#contact ">Печи хлебопекарные</a></li>
+                            <li><a href="#home ">Противни, формы, решетки для печей</p></a></li>
+                            <li> <a href="#about ">Расстоечные шкафы и камеры</a></li>
+                            <li> <a href="#contact ">Тестомесы </a></li>
+           </ul> 
+          
+          
+                <ul class="dropdown-menu m6 dropdown-menu_pos">
+                   <li> <a href=" #home ">Аста</a></li>
+                            <li><a href="#about ">Патша </a></li>
+                            <li> <a href="#contact ">Премьер</a></li>
+                            <li><a href="#home ">Ривьера </a></li>
+                            <li> <a href="#about ">Регата </a></li>
+                            <li> <a href="#contact ">Вега </a></li>
+                            <li><a href="#home ">Школьник</a></li>
+                            <li><a href="#about ">Мастер </a></li>
+                            <li><a href="#contact ">Салат-бары(буфет) </a></li>
+                            <li><a href="#home ">Линия самообслуживания передвижная</a></li>
+           </ul> 
+          
+          
+                <ul class="dropdown-menu m7 dropdown-menu_pos">
+                  <li> <a href=" #home ">Ванны моечные </a></li>
+                            <li><a href="#about ">Столы производственные </a></li>
+                            <li> <a href="#contact ">Стеллажи кухонные</a></li>
+                            <li><a href="#home ">Показатели</a></li>
+                            <li> <a href="#about ">Зонты вентиляционные </a></li>
+                            <li> <a href="#contact ">Тележки </a></li>
+                            <li><a href="#home ">Шпильки</a></li>
+                            <li><a href="#about ">Шкафы </a></li>
+                            <li><a href="#contact ">Подтоварники и подставки </a></li>
+                            <li><a href="#home ">Контейнеры для продуктов </a></li>
+           </ul> 
+          
+          
+                <ul class="dropdown-menu m8 dropdown-menu_pos">
+                   <li> <a href=" #home ">Грили для кур </a></li>
+                            <li><a href="#about ">Фритюрницы электрические </a></li>
+                            <li> <a href="#contact ">Чебуречницы </a></li>
+                            <li><a href="#home ">Установки Шаурма </a></li>
+                            <li> <a href="#about ">Пончиковые аппараты</a></li>
+                            <li> <a href="#contact ">Аппараты блинные </a></li>
+                            <li><a href="#home ">Роликовый гриль></a></li>
+                            <li><a href="#about ">Контактный гриль </a></li>
+                            <li><a href="#contact ">Гриль Саламандра </a></li>
+                            <li><a href="#home ">Аппараты для сахарной ваты </a></li>
+                            <li><a href="#about ">Аппараты для попкорна </a></li>
+                            <li><a href="#contact ">Оборудование для бургерных</a></li>
+           </ul> 
+          
+          
+                <ul class="dropdown-menu m9 dropdown-menu_pos">
+                  <li> <a href=" #home ">Барные стойки </a></li>
+                            <li><a href="#about ">Диваны для бара и ресторана </a></li>
+                            <li> <a href="#contact ">Обеденные группы</a></li>
+                            <li><a href="#home ">Стулья </a></li>
+                            <li> <a href="#about ">Столы </a></li>
+                  
+           </ul> 
+          
+          
+                <ul class="dropdown-menu m10 dropdown-menu_pos">
+                  
+                  <li> <a href=" #home ">Весы напольные </a></li>
+                            <li><a href="#about ">Весы порционные настольные </a></li>
+                            <li> <a href="#contact ">Баки для мусора</a></li>
+                            <li><a href="#home ">Измельчители бытовых отходов </a></li>
+           </ul> 
+          
+          
+                <ul class="dropdown-menu m11 dropdown-menu_pos">
+                   <li> <a href=" #home ">Неохлаждаемые витрины </a></li>
+                            <li><a href="#about ">Прилавки и кассовые боксы </a></li>
+                            <li> <a href="#contact ">Измельчители пищевых отходов</a></li>
+                            <li><a href="#home ">Гриль Саламандра </a></li>
+                            <li> <a href="#about ">Контактный гриль </a></li>
+                            <li> <a href="#contact ">Жарочные поверхности</a></li>
+                            <li><a href="#home ">Водонагреватели</a></li>
+                            <li><a href="#about ">Кипятильники </a></li>
+                            <li><a href="#contact ">Конвекционные печи </a></li>
+                            <li><a href="#home ">Пароконвектоматы</a></li>
+                            <li><a href="#about ">Плиты</a></li>
+                            <li><a href="#contact ">Электросковороды </a></li>
+                            <li><a href="#home ">Фритюрницы </a></li>
+                            <li><a href="#about ">Шкафы жарочные</a></li>
+                            <li><a href="#contact ">Лари морозильные </a></li>
+                            <li><a href="#contact ">Холодильные шкафы </a></li>
+                            <li><a href="#contact ">Шкафы шоковой заморозки </a></li>
+                            <li><a href="#contact ">Бликсер </a></li>
+                            <li><a href="#contact ">Куттеры </a></li>
+                            <li><a href="#contact ">Кухонный процессор</a></li>
+                            <li><a href="#contact ">Мясорубки </a></li>
+                            <li><a href="#contact ">Овощерезки </a></li>
+                            <li><a href="#contact ">Протирочные машины </a></li>
+           </ul> 
+      
+              </div>
+          
+             
+
+    </header>
+
+
+    <div class="content content_pos">
+
+
+        <div class="equipment equipment_pos"  id="equipment">
+            <p class="equipment__text">
+             Оборудование <span class="equipment__arrow"></span>
+            </p>
+            <ul class="list list_pos">
+              <li><a href="teplovoye">Тепловое</a></li>
+              <li><a href="teplovoye">Холодильное</a></li>
+              <li><a href="teplovoye">Электромеханическое</a></li>
+             <li><a href="teplovoye">Посудомоечное</a></li>
+              <li><a href="teplovoye">Хлебопекарное</a></li>
+              <li><a href="teplovoye">Линии раздачи</a></li>
+              <li><a href="teplovoye">Нейтральное</a></li>
+              <li><a href="teplovoye">Для фаст фуда</a></li>
+              <li><a href="teplovoye">Для залов</a></li>
+              <li><a href="teplovoye">Вспомогательное</a></li>
+              <li><a href="teplovoye">Для магазинов</a></li> 
+            </ul>  
+          </div>
+
+
+        <div class="first-level first-level_pos">
+
+
+            <div class="advertice advertice_pos">
+                <h1 class="advertice__title">Целевые предложения</h1>
+                <a class="advertice__text" href="#">Государственным заказчикам<p class="advertice__arrow">></p></a>
+                <a class="advertice__text" href="#">Кафе, барам, ресторанам<p class="advertice__arrow">></p></a>
+                <a class="advertice__text" href="#">Детским садам и школам<p class="advertice__arrow">></p></a>
+                <a class="advertice__text" href="#">Таблет-питание для больниц<p class="advertice__arrow">></p></a>
+                <a class="advertice__text " href="# ">Оборудование для кондитерских<p class="advertice__arrow ">></p>
+                </a>
+                <a class="advertice__text" href="#">Оборудование для пиццерии<p class="advertice__arrow">></p></a>
+                <a class="advertice__text " href="# ">Для малого бизнеса<p class="advertice__arrow ">></p></a><a
+                    class="advertice__text" href="#">Оборудование для мини кафе<p class="advertice__arrow">></p></a>
+                <a class="advertice__text" href="#">Все предложения
+                    <p class="advertice__arrow">></p>
+                </a>
+            </div>
+
+
+            <div class="content-slider content-slider_pos">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper__slider1">
+                        <h2 class="swiper__h2">Портфолио</h2>
+                        <h1 class="swiper__h1">Комбинат питания МФТИ</h1>
+                        <h3 class="swiper__h3">Проектирование предприятий питания</h3>
+                        <input type="button" value="Подробнее" class="swiper__btn1 swiper__btn1_txt">
+                      </div>
+                      <img class="swiper__img" src="img/first.png" alt="Картинка1">
+          
+          
+          
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__slider1">
+                        <h2 class="swiper__h2">Портфолио</h2>
+                        <h1 class="swiper__h1">Городская больница им. Филатова</h1>
+                        <h3 class="swiper__h3">Проектирование и комплексное снабжение</h3>
+                        <input type="button" value="Подробнее" class="swiper__btn1 swiper__btn1_txt">
+                      </div>
+                      <img class="swiper__img" src="img/second.png" alt="Картинка2">
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__slider1">
+                        <h2 class="swiper__h2">Портфолио</h2>
+                        <h1 class="swiper__h1">Ресторан "Седьмое небо"</h1>
+                        <h3 class="swiper__h3">Проектирование и комплексное снабжение</h3>
+                        <input type="button" value="Подробнее" class="swiper__btn1 swiper__btn1_pos">
+                      </div>
+                      <img class="swiper__img1" src="img/third.png" alt="Картинка3">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+          
+                </div>
+              </div>
+            <div class="sale sale_pos"><img src="img/present.png" class="sale__img" alt="Картинка4">
+                <h2 class="sale__h2">Cамые низкие цены</h2>
+                <h1 class="sale__h1">Распродажа</h1><a class="sale__link" fref="#">Каталог распродаж></a>
+            </div>
+
+        </div>
+
+        <div class="content__brands content__brands_pos"><img class="brands__img" src="img/abat.png" alt="Abat"><img
+                class="brands__img" src="img/hicold.png" alt="Hicold"><img class="brands__img" src="img/polair.png"
+                alt="Polair"><img class="brands__img" src="img/simeco.png" alt="Simeco">
+            <img class="brands__img" src="img/rada.png" alt="Rada"><span class="brands__all">Все бренды</span></div>
+
+
+
+
+        <div class="news news_pos">
+            <h1 class="news__title">Новости производителей</h1>
+
+            <div class="aba aba_pos">
+                <div class="aba-img aba-img_pos">
+                    <img class="aba-img__img" alt="aba-img " src="img/news-img.png">
+                </div>
+                <div class="abat-post">
+                    <p class="abat-post__p">Abat</p>
+                    <p class="abat-post__date">04.12.2017</p>
+                </div>
+
+                <div class="abat-about">
+
+                    <a href="2">
+                        <h2 class="abat-about__item">Новинка: двухъярусная подовая печь для пиццы ПЭП-4х2</h2>
+                    </a>
+                    <p class="abat-about__text">Новое выгодное решение для профессионалов кухни! В серийное производство
+                        вышла двухъярусная подовая печь для пиццы ПЭП-4х2 торговой марки Abat.</p>
+                </div>
+
+            </div>
+
+
+            <div class="products products_pos">
+                <div class="prod-mob prod-mob_pos">
+                    <div class="prod-mob-img prod-mob-img_pos">
+                        <img class="prod-mob-img__img" src="img/news-img.png" alt="abat-img"> </div>
+
+                    <div class="prod-mob-position prod-mob-position_pos">
+
+                        <div class="prod-mob-post prod-mob-post_pos">
+                            <p class="prod-mob-post__p">Abat</p>
+                            <p class="prod-mob-post__date">15.12.2017</p>
+                        </div>
+
+
+                        <div class="prod-mob-about prod-mob-about_pos"><a href="2">
+                                <h2 class="prod-mob-about__item">Новинка: двухъярусная подовая печь для пиццы ПЭП-4х2d
+                                </h2>
+                            </a>
+                            <p class="prod-mob-about__text">Новое выгодное решение для профессионалов кухни! В серийное
+                                производство вышла двухъярусная подовая печь для пиццы ПЭП-4х2 торговой марки Abat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod prod_pos">
+                    <div class="prod-img prod-img_pos">
+                        <img class="prod-img__img" src="img/hic-img.png" alt="hic-img"> </div>
+
+                    <div class="prod-position prod-position_pos">
+
+                        <div class="prod-post prod-post_pos">
+                            <p class="prod-post__p">Hicold</p>
+                            <p class="prod-post__date">15.12.2017</p>
+                        </div>
+
+
+                        <div class="prod-about prod-about_pos"><a href="2">
+                                <h2 class="prod-about__item">Расширение модельного ряда Hicold</h2>
+                            </a>
+                            <p class="prod-about__text">HICOLD расширяет ассортимент выпускаемого оборудования.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="prod prod_pos">
+
+                    <div class="prod-img prod-img_pos">
+                        <img class="prod-img__img" src="img/ates-img.png" alt="hic-img"> </div>
+
+                    <div class="prod-position prod-position_pos">
+
+                        <div class="prod-post prod-post_pos">
+                            <p class="prod-post__p">ATESY</p>
+                            <p class="prod-post__date">10.11.2017</p>
+                        </div>
+
+
+                        <div class="prod-about prod-about_pos"><a href="2">
+                                <h2 class="prod-about__item">Новинка: котлы пищеварочные АКПЭ</h2>
+                            </a>
+                            <p class="prod-about__text">АТЕСИ предлагает Вашему вниманию котлы пищеварочные
+                                «АКПЭ»-100-2.1 и «АКПЭ»-100-2.1, которые применяются на кухнях общественного питания для
+                                приготовления кипятка больших объемов и следующих блюд: каши, соусы, супы, бульоны,
+                                компоты, кисели, вареные овощи.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="prod prod_pos">
+
+                    <div class="prod-img prod-img_pos">
+                        <img class="prod-img__img" src="img/aba-img.png" alt="hic-img"> </div>
+
+                    <div class="prod-position prod-position_pos">
+
+                        <div class="prod-post prod-post_pos">
+                            <p class="prod-post__p">Abat</p>
+                            <p class="prod-post__date">12.12.2017</p>
+                        </div>
+
+
+                        <div class="prod-about prod-about_pos"><a href="2">
+                                <h2 class="prod-about__item">Новинка: настольная холодильная витрина 700 серии ВХН-70-01
+                                </h2>
+                            </a>
+                            <p class="prod-about__text">С радостью сообщаем о новинке - в серийное производство вышла
+                                еще одна настольная холодильная витрина 700 серии ВХН-70-01, предназначенная для
+                                демонстрации и поддержания в охлажденном состоянии различных продуктов.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="news-btn news-btn_pos">
+            <input class="news-btn_butn" type="button" value="Все новости">
+        </div>
+
+
+
+
+
+        <div class="recomendations recomendations_pos">
+            <h1 class="recomendations__title">Рекомендации</h1>
+            <div class="recomendations__text">В этих разделах вы можете получить подробную информацию о пищевом
+                оборудовании для столовых, ресторанов и кафе ведущих производителей.</div>
+        </div>
+
+
+
+
+        <div class="recomendated-products recomendated-products_pos">
+            <div class="rational rational_pos"><span class="rational__logo-text">rational</span>
+                <h1 class="rational__title">Пароконвектомат</h1>
+                <p class="rational__text">Педантичность и преданность своему делу делает продукцию Rational идеальной
+                    для тех, кто ищет надежность и долговечность</p><img class="rational__img" src="img/img2.png"
+                    alt="img1">
+            </div>
+
+            <div class="side-products side-products_pos">
+                <div class="abat abat_pos"><span class="abat__logo-text">Abat</span>
+                    <h1 class="abat__title">Пароконвектомат</h1>
+                    <p class="abat__text">Более 55 лет успешно работает на рынке торгово-технологического оборудования,
+                        по праву занимая лидирующее положение в данном сегменте</p><img class="abat__img"
+                        src="img/abat-img.png" alt="abat-img">
+                </div>
+
+
+                <div class="hicold hicold_pos"><span class="hicold__logo-text">hicold</span>
+                    <h1 class="hicold__title">Холодильные столы</h1>
+                    <p class="hicold__text">Многофункциональность оборудования позволяет оптимизировать пространство на
+                        кухне, сделать работу персонала максимально удобной и эффективной.</p><img class="hicold__img "
+                        src="img/hicold-img.png " alt="img2 ">
+                </div>
+            </div>
+            <div class="aside-mob aside-mob_pos">
+                <div class="logotype-mob">
+                    <img class="logotype-mob__img" src="img/logo-empty.png" alt="stolovaya-img">
+                    <h1 class="logotype-mob__name">Столовая.РУ</h1>
+                    <p class="logotype-mob__p">создание оптимальных пищеблоков</p>
+                </div>
+                <div class="group-mob">
+                    <h2 class="group-mob__title">Группа компаний</h2>
+                    <p class="group-mob__text">Показатели:</p>
+                    <div class="group-mob-data">
+                        <p class="group-mob-data__p">На рынке: 5 лет</p>
+                        <p class="group-mob-data__p">Объем контрактов: 4 млрд.р.</p>
+                        <p class="group-mob-data__p">Количество контрактов: 620</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-inf text-inf_pos text-inf-mob text-inf-mob_pos">
+                <div class="about about_pos">
+                    <h1 class="about__title">Комплексные решения оснащения столовых и кафе</h1>
+                    <p class="about__text">Компания «Диалог» предлагает комплексное оснащение столовых, ресторанов, кафе
+                        и баров в Москве. Наши услуги построены по принципу полного цикла обслуживания предприятий
+                        общепита и бизнеса HoReCa. Иными словами, мы предлагаем проектирование
+                        «под ключ» и постгарантийное обслуживание. География работы компании охватывает всю страну. При
+                        этом в каждом регионе мы готовы предложить демократичные цены на профессиональное
+                        технологическое оборудование для столовой и оптимальные решения
+                        с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях
+                        ограниченного бюджета.</p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="adds adds_pos">
+            <h1 class="adds__title">Что мы предлагаем</h1>
+
+            <p class="adds__text">разработку технологического проекта кухни и производственной линии, дизайна
+                ресторанного интерьера;
+            </p>
+            <p class="adds__text">составление меню согласно концепции и оснащения бара (кафе, столовой);
+            </p>
+            <p class="adds__text">подбор посуды, текстиля под общий стиль;
+            </p>
+            <p class="adds__text">профессиональное оборудование для кафе, бара и ресторана, большой выбор современных
+                моделей;
+            </p>
+            <p class="adds__text">доставку в любой регион РФ;
+            </p>
+            <p class="adds__text">монтажные и пуско-наладочные работы;
+            </p>
+            <p class="adds__text">автоматизацию производственного процесса, что позволяет определённое оборудование для
+                бара;
+            </p>
+
+
+
+        </div>
+
+
+        <div class="aside aside_pos">
+            <div class="logotype">
+                <img class="logotype__img" src="img/logo-empty.png" alt="stolovaya-img">
+                <h1 class="logotype__name">Столовая.РУ</h1>
+                <p class="logotype__p">создание оптимальных пищеблоков</p>
+            </div>
+            <div class="group">
+                <h2 class="group__title">Группа компаний</h2>
+                <p class="group__text">Показатели:</p>
+                <div class="group-data">
+                    <p class="group-data__p">На рынке: 5 лет</p>
+                    <p class="group-data__p">Объем контрактов: 4 млрд.р.</p>
+                    <p class="group-data__p">Количество контрактов: 620</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="additional additional_pos additional-mobile">
+            <div id="additional__text">
+                <h1 class="additional__title">Этапы оснащения кафе</h1>
+                <p class="additional__p">Независимо от типа объекта, будь то детское кафе или китайский ресторан,
+                    последовательность задач при заказе услуги «под ключ» выглядит одинаково.
+                <p class="additional__p">На первом этапе выбирается подходящее помещение и проводится анализ спроса на
+                    подобное заведение. Оценка необходима, если концепция меняется кардинально, либо заведение создаётся
+                    «с нуля». </p>
+                <p class="additional__p">Затем составляется техническое задание, которое учитывает вместимость
+                    помещения, формируется общая модель работы и технологический процесс, определяется необходимое
+                    технологическое оборудование для ресторана. Согласно ТЗ, разрабатывается
+                    план расположения ресторанного оборудования и его 3D-модель. Этап позволяет выявить неочевидные
+                    ошибки, которые в дальнейшем могут привести к нарушению технологии или существенному снижению
+                    производительности. После тщательного
+                    анализа производятся работы по монтажу и пуско-наладке. </p>
+                <p class="additional__p">Сложностью в деле создания самостоятельного и эффективного предприятия питания
+                    является не столько проблема купить кухонное оборудование для столовой, сколько получить документы
+                    проверяющих инстанций. Помимо продажи и проектирования,
+                    мы может оказать содействие в получении необходимых разрешений. </p>
+                <h1 class="additional__best">Наши преимущества</h1>
+                <ol>
+
+                    <li>комплексное решение «под ключ» - клиенту нужно лишь обратиться к нам;
+                    </li>
+                    <li>отлаженный поэтапный механизм реализации проектов, большой опыт и портфолио законченных работ;
+                    </li>
+                    <li>сервисное обслуживание, куда входят работы по настройке профессионального оборудования для кухни
+                        кафе и ресторана, гарантийное обслуживание, постгарантийный сервис;
+                    </li>
+                    <li>наличие готовых и типовых проектов, что сводит к минимуму оценочную стоимость предполагаемых
+                        работ;
+                    </li>
+                    <li>собственный проектный отдел – разработка концепции, проекта и калькуляция расходов в короткие
+                        сроки;
+                    </li>
+                    <li>подробный каталог с возможностью помощи консультанта;
+                    </li>
+                    <li>гарантированная доставка по Москве и во все регионы страны с учётом специфики каждого маршрута;
+                    </li>
+                    <li>оснащение ресторанов технологическим оборудованием только проверенных производителей.</li>
+                    <li>Постройте свой эффективный бизнес вместе с компанией «Диалог».</li>
+                </ol>
+            </div>
+            <div class="btn-container btn-container_pos"><button id="btn-container__toggle">+</button></div>
+        </div>
+    </div>
+
+    <div class="footer footer_wrapper">
+        <ul class="column column_pos">
+            <h1 class="column__li1">
+                <a fref="#"></a>Информация</h1>
+            <li>Компания</li>
+            <li>Проектирование</li>
+            <li>Ресторанам</li>
+            <li>Застройщикам</li>
+            <li>Гос.заказчикам</li>
+            <li>Таблет-питание</li>
+            <li>Сервис</li>
+            <li>Контакты</li>
+        </ul>
+        <ul class="column column_pos">
+            <h1 class="column__li1">Оборудование</h1>
+            <li>Тепловое</li>
+            <li>Холодильное</li>
+            <li>Электромеханическое</li>
+            <li>Посудомоечное</li>
+            <li>Линии раздачи</li>
+            <li>Нейтральное</li>
+            <li>Для фаст-фуда</li>
+            <li>Для залов</li>
+            <li>Вспомогательное</li>
+            <li>Для магазинов</li>
+        </ul>
+        <ul class="column column_pos">
+            <h1 class="column__li1">Предложения</h1>
+            <li>Детским садам и школам</li>
+            <li>Для кондитерских</li>
+            <li>Для пицерий</li>
+            <li>Для магазинов</li>
+            <li>Для буфетов</li>
+            <li>Для пищеблоков</li>
+            <li>Для кафе</li>
+            <li>Для горячих цехов</li>
+            <li>Все предложения</li>
+        </ul>
+        <ul class="column column_pos">
+            <h1 class="column__li1">Оборудование</h1>
+            <li class="column__li">Тепловое</li>
+            <li class="column__li">Холодильное</li>
+            <li class="column__li">Электромеханическое</li>
+            <li class="column__li">Посудомоечное</li>
+            <li class="column__li">Линии раздачи</li>
+            <li class="column__li">Нейтральное</li>
+            <li class="column__li">Для фаст-фуда</li>
+            <li class="column__li">Для залов</li>
+            <li class="column__li">Вспомогательное</li>
+            <li class="column__li">Для магазинов</li>
+        </ul>
+        <ul class="column column_pos">
+            <h1 class="column__li1">Предложения</h1>
+            <li class="column__li">Детским садам и школам</li>
+            <li class="column__li">Для кондитерских</li>
+            <li class="column__li">Для пицерий</li>
+            <li class="column__li">Для магазинов</li>
+            <li class="column__li">Для буфетов</li>
+            <li class="column__li">Для пищеблоков</li>
+            <li class="column__li">Для кафе</li>
+            <li class="column__li">Для горячих цехов</li>
+            <li class="column__li">Все предложения</li>
+
+        </ul>
+        <div class="column column_pos">
+            <h1 class="column__li1">Контакты</h1>
+            <div class="contacts">
+                <p class="contacts__mob">8 495 790-72-05</p>
+                <p class="contacts__home-phone">8 800 333-88-31</p>
+            </div>
+
+
+            <div class="shedule">
+                <p class="shedule__days">Пн-Пт</p>
+                <p class="shedule__time">9:00 до 18:00</p>
+            </div>
+
+            <div class="email">
+                <p class="email__name">info@stolovaya.ru</p>
+                <p class="email__adress">109428, Москва</p>
+            </div>
+
+            <div class="adress">
+                <p class="adress__name">Большая Семеновская 43с2 </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-mobile footer-mobile_wrapper">
+        <input class="hide" id="hd-1" type="checkbox">
+        <label for="hd-1">Информация</label>
+        <div>
+            <ul class="footer__news">
+
+                <li><a href="1">Компания</a></li>
+                <li><a href="1">Портфолир</a></li>
+                <li><a href="1">Проектирование</a></li>
+                <li><a href="1">Ресторанам</a></li>
+                <li><a href="1">Застройщикам</a></li>
+                <li><a href="1">Гос.заказчикам</a></li>
+                <li><a href="1">Таблет-питание</a></li>
+                <li><a href="1">Сервис</a></li>
+                <li><a href="1">Контакты</a></li>
+            </ul>
+        </div>
+
+        <input class="hide" id="hd-2" type="checkbox">
+        <label for="hd-2">Оборудование</label>
+        <div>
+            <ul class="footer__news">
+                <li><a href="1">Тепловое</a></li>
+                <li><a href="1">Холодильное</a></li>
+                <li><a href="1">Электромеханическое</a></li>
+                <li><a href="1">Посудомоечное</a></li>
+                <li><a href="1">Линии раздачи</a></li>
+                <li><a href="1">Нейтральное</a></li>
+                <li><a href="1">Для фаст фуда</a></li>
+                <li><a href="1">Для залов</a></li>
+                <li><a href="1">Вспомогательное</a></li>
+                <li><a href="1">Для магазинов</a></li>
+            </ul>
+
+        </div>
+
+
+        <input class="hide" id="hd-3" type="checkbox">
+        <label for="hd-3">Предложения</label>
+        <div>
+            <ul class="footer__news">
+                <li><a href="1">Детским садам и школам</a></li>
+                <li><a href="1">Для кондитерских</a></li>
+                <li><a href="1">Для пиццерий</a></li>
+                <li><a href="1">Для магазинов</a></li>
+                <li><a href="1">Для буфетов</a></li>
+                <li><a href="1">Для пищеблоков</a></li>
+                <li><a href="1">Для кафе</a></li>
+                <li><a href="1">Для горячих цехов</a></li>
+                <li><a href="1">Все предложения</a></li>
+            </ul>
+        </div>
+        <input class="hide" id="hd-4" type="checkbox">
+        <label for="hd-4">Контакты</label>
+        <div class="footer__news">
+            
+            <div class="footer-contacts">
+                <p class="footer-contacts__mob">8 495 790-72-05</p>
+                <p class="footer-contacts__home-phone">8 800 333-88-31</p>
+            </div>
+
+
+            <div class="footer-shedule">
+                <p class="footer-shedule__days">Пн-Пт</p>
+                <p class="footer-shedule__time">9:00 до 18:00</p>
+            </div>
+
+            <div class="footer-email">
+                <p class="footer-email__name">info@stolovaya.ru</p>
+                <p class="footer-email__adress">109428, Москва</p>
+            </div>
+
+            <div class="footer-adress">
+                <p class="footer-adress__name">Большая Семеновская 43с2 </p>
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="info">
+        <div class="footer-stolovaya footer-stolovaya_pos">
+            <img class="footer-stolovaya__logo footer-stolovaya__logo_pos" src="img/logo-empty.png">
+        </div>
+        <div class="text text_pos">
+            <p class="text__name">Столовая.РУ</p>
+            <p class="text__tex">Создание оптимальных пищеблоков
+            </p>
+        </div>
+        <div class="studio studio_pos">
+
+            <p class="studio__company">Сделано с&nbsp;<img class="studio__heart" src="img/heart.png"
+                    alt="heart">&nbsp;от request=t.me/UXUI_design </p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/swiper.js"></script>
+
+    <script src="js/variants-dropdown.js"></script>
+    <script src="js/menu-scroll.js"></script>
+    <script src="js/toggle-text.js"></script>
+    <script src="js/search-form-drop.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/mobile-menu-toggle.js"></script>
+    <script src="js/mobile-searcher.js"></script>
+    <script src="js/equipment-toggle.js"></script>
+    <script src="js/mobile-contacts-toggle.js"></script>
+
+    
+</body>
+
+</html>
+
+</html>
