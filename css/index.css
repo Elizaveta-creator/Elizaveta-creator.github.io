@@ -2974,7 +2974,7 @@ padding-left: -560px;
 
 
 
-@media all and (min-width: 768px) and (max-width: 1020px) {
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
 
     .header__wrapper {
 
@@ -3734,7 +3734,7 @@ padding-left: -560px;
 
 /*МОБИЛЬНАЯ*/
 
-@media all and (min-width: 425px) and (max-width: 767px) {
+@media only screen and (min-width: 425px) and (max-width: 767px) {
 
     .header__wrapper {
         max-width: 767px;
@@ -4997,7 +4997,7 @@ padding-left: -560px;
 }
 
 
-@media all and (min-width: 0px) and (max-width: 425px) {
+@media only screen and (min-width: 0px) and (max-width: 425px) {
 
     .header__wrapper {
         max-width: 767px;
