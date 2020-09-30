@@ -721,7 +721,7 @@ padding-left:20px;
 .swiper__img1 {
     width: 100%;
     height: 100%;
-    padding-left: 10%;
+    
 }
 
 .swiper__img {
@@ -859,7 +859,7 @@ padding-left: -560px;
 }
 
 .content__brands {
-    width: 89%;
+    width: 90.5%;
     background: white;
     height: 110px;
     display: -webkit-box;
@@ -887,8 +887,8 @@ padding-left: -560px;
     font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 22px;
-    text-align: center;
-    padding-left: 70px;
+    text-align: left;
+    padding-left: -120px;
     padding-right: 70px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -923,7 +923,7 @@ padding-left: -560px;
 .news__title {
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 42px;
 }
 
 .aba {
@@ -1762,7 +1762,8 @@ padding-left: -560px;
         width: 100%;
 
     }
-
+  
+    
     .navigation {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2092,7 +2093,7 @@ padding-left: -560px;
         padding-bottom: 30px;
     }
     .brands__all {
-        margin-left: -50px;
+        margin-left: 70px;
     }
     .news_pos {
         margin-left: 60px;
@@ -2342,7 +2343,7 @@ padding-left: -560px;
 
     .aside_pos {
         margin-top: -480px;
-        margin-left: 1200px;
+        margin-left: 1150px;
     }
 
     .aside {
@@ -4299,11 +4300,7 @@ padding-left: -560px;
         display: none;
     }
 
-    .header-content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
+  
 
 
 
@@ -4341,17 +4338,15 @@ padding-left: -560px;
         display: -ms-flexbox;
         display: flex;
         width: 100%;
-        position: fixed;
+        position: relative;
         background: white;
-        margin-top: -60px;
-        height: 70px;
+        margin-top: 0px;
+        height: 35px;
         z-index: 19999999999999;
     }
 
     .header-content {
-        margin-top: 15px;
-width: 100%;
-        background: white;
+display: none;
     }
 
     .search-find {
@@ -4365,7 +4360,7 @@ width: 100%;
     .logo-mob_pos {
 
         margin-left: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
 
     .logo-mob {
@@ -4402,7 +4397,7 @@ width: 100%;
     }
 
     .stuck-head_pos {
-        padding-left: 5px;
+        padding-left: 35px;
         padding-top: 5px;
         padding-bottom: 10px;
     }
@@ -4622,7 +4617,7 @@ width: 100%;
 
             
             .mob-mobile__dropbtn {
-                background: url(/img/phone-mob.png)  no-repeat;
+                background: url(../img/phone-mob.png)  no-repeat;
                 background-size: 25px;
                 padding: 16px;
                 font-size: 16px;
@@ -4696,7 +4691,7 @@ width: 100%;
     }
 
     .equipment_pos {
-        margin-top: -90px;
+        margin-top: -115px;
        
     }
 
@@ -4711,7 +4706,7 @@ width: 100%;
             flex-flow: row;
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: relative;
     z-index: 333;
     height: 35px;
    
@@ -4737,9 +4732,9 @@ width: 100%;
     color: black;
     text-decoration: none;
   background: lightgrey;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-left: 20px;
-    height: 35px;
+    height: 55px;
     opacity: 1;
     -webkit-transform-origin: right top;
         -ms-transform-origin: right top;
@@ -4762,7 +4757,7 @@ width: 100%;
     .marka {
      position: absolute;
      left: 200px;
-      top:20px;
+      top:30px;
       width: 20px;
       height: 20px;
       z-index: 9999;
@@ -4853,7 +4848,7 @@ width: 100%;
     }
 
     .first-level_pos {
-        margin-left: 20px;
+        margin-left: 10px;
         margin-top: 350px;
     }
 
@@ -4905,11 +4900,12 @@ width: 100%;
     .swiper__img,
     .swiper__img1 {
         height: 100%;
-        padding-left: 10%;
+       
     }
 
     .swiper__img {
         padding-top: 10%;
+        padding-left: 10%;
     }
 
     .swiper__slider1_pos {
@@ -4943,12 +4939,12 @@ width: 100%;
     .swiper__h2,
     .swiper__h3,
     span {
-        width: 40%;
+        width: 45%;
         color: white;
-        font-family: Arial, sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-align: left;
         line-height: 30px;
-        padding-left: 50px;
+        padding-left: 25px;
     }
 
     .swiper__h2,
@@ -4968,7 +4964,7 @@ width: 100%;
        display: none;
     }
     .swiper__btn1 {
-        margin-left: 195px;
+        margin-left: 175px;
     }
 
     .swiper__btn1 {
@@ -4987,6 +4983,7 @@ width: 100%;
         border: none;
         width: 35%;
         height: 35px;
+        font-size: 12px;
     }
 
     .swiper__btn1:focus {
@@ -5585,6 +5582,7 @@ width: 100%;
         color: white;
         cursor: pointer;
         display: inline-block;
+        padding-left: 10px;
 
     }
 
@@ -5733,17 +5731,15 @@ width: 100%;
         display: -ms-flexbox;
         display: flex;
         width: 100%;
-        position: fixed;
+        position: relative;
         background: white;
-        margin-top: -60px;
-        height: 70px;
+        margin-top: 0px;
+        height: 30px;
         z-index: 19999999999999;
     }
 
     .header-content {
-        margin-top: 15px;
-        width: 100%;
-        background: white;
+display: none;
     }
 
     .search-find {
@@ -5795,8 +5791,8 @@ width: 100%;
     }
 
     .stuck-head_pos {
-        margin-left: -40px;
-        padding-top: 10px;
+        margin-left: 20px;
+        padding-top: 25px;
         padding-bottom: 10px;
     }
 
@@ -5809,10 +5805,10 @@ width: 100%;
     }
 
     .nav-btn {
-        margin-top: 15px;
+        
         position: absolute;
-        height: 25px;
-        width: 25px;
+        height: 30px;
+        width: 30px;
         background: url("https://i.imgur.com/qPQxa9T.png") orange no-repeat;
         background-position: center center;
         background-size: 60%;
@@ -5892,7 +5888,7 @@ width: 100%;
     }
     .buttons-mob_pos {
         padding-left: -30px;
-        margin-top: 5px;
+        margin-top: 0px;
        
     }
     .buttons-mob {
@@ -6020,7 +6016,7 @@ width: 100%;
 
             
             .mob-mobile__dropbtn {
-                background: url(/img/phone-mob.png)  no-repeat;
+                background: url(../img/phone-mob.png)  no-repeat;
                 background-size: 25px;
                 padding: 16px;
                 font-size: 16px;
@@ -6094,7 +6090,7 @@ width: 100%;
     }
 
     .equipment_pos {
-        margin-top: -100px;
+        margin-top: -110px;
        
     }
 
@@ -6109,7 +6105,7 @@ width: 100%;
             flex-flow: row;
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: relative;
     z-index: 333;
     height: 35px;
    
@@ -6135,7 +6131,7 @@ width: 100%;
     color: black;
     text-decoration: none;
   background: lightgrey;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 20px;
     height: 40px;
     opacity: 1;
@@ -6160,7 +6156,7 @@ width: 100%;
     .marka {
      position: absolute;
      left: 100px;
-      top:2px;
+      top:25px;
       width: 20px;
       height: 20px;
       z-index: 9999;
@@ -6304,7 +6300,7 @@ width: 100%;
     .swiper__img,
     .swiper__img1 {
         height: 100%;
-        padding-left: 10%;
+        
     }
 
     .swiper__img {
@@ -6982,6 +6978,7 @@ width: 100%;
         color: white;
         cursor: pointer;
         display: inline-block;
+        padding-left: 10px;
 
     }
 
