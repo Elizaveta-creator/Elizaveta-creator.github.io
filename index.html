@@ -63,36 +63,78 @@
         </div>
 
 
+
+        <div class="stuck-head stuck-head_pos">
+            <a class="nav-btn" id="nav-open" href="#sidebar" menu><span>menu</span></a>
+        </div>
+        <div id="menumobile">
+            <nav class="navigationmobile navigationmobile_pos">
+                <ul>
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Проектирование</a></li>
+                    <li class="navigationmobile__under"><a href="#">Презентация</a></li>
+                    <li><a href="#">Застройщикам</a></li>
+                    <li><a href="#">Гос заказчикам</a></li>
+                    <li class="navigationmobile__under"><a href="#">Таблет-питание</a></li>
+                    <li><a href="#">Сервис</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav></div>
+        
+
+        <div class="logo-mob logo-mob_pos">
+            <img class="logo-mob__img" src="img/logo-mob.png">
+        </div>
+
+
+
+
+<!--ДЛЯ ТЕЛЕФОНОВ-->
+<div class="buttons-mob buttons-mob_pos">
+
+    <div class="search-mobile search-mobile_pos">
+        <button onclick="mobSearch()" class="search-mobile__loop"><img class="search-mobile__img"
+                src="img/search.png" alt="loop-img"></button>
+
+        <form id="dropSearch" class="search-mobile__content search-mobile__content_pos">
+
+            <input class="search-mobile__text" type="text" placeholder="find">
+            <input class="search-mobile__sub" type="submit">
+        </form>
+
+
+
+    </div>
+
+
+
+    <div class="mob-mobile mob-mobile_pos">
+        <button onclick="myFunction()" class="mob-mobile__dropbtn"></button>
+        <ul id="myDropdown" class="mob-mobile__content mob-mobile__content_pos">
+         <li><a href="teplovoye">8 800 333-88-31</a></li>
+                            <li class="mob-mobile__content-underline"><a href="teplovoye">Звонок бесплатный</a></li>
+                            <li><a href="teplovoye">Пн-Пт</a></li>
+                           <li class="mob-mobile__content-underline"><a href="teplovoye">09:00 до 18:00</a></li>
+                            <li class="mob-mobile__content-underline"><a href="teplovoye">info@stolovay.ru</a></li>
+                            <li><a href="teplovoye">109428,Москва,</a></li>
+                            <li><a href="teplovoye">Большая Семеновская 43с2 </a></li>
+        </ul>
+      </div>
+      <button class="basket-mobile basket-mobile_pos">
+        <p class="basket-mobile__ammount">0</p>
+        <img class="basket-mobile__img" src="img/card.png" alt="card-img">
+    </button>
+</div>
+
+
+
+        
         <div class="header-content header-content_pos">
             <div class="logo logo_pos">
                 <img class="logo__img" src="img/logo1.png">
             </div>
-            <div class="stuck-head stuck-head_pos">
-                <a class="nav-btn" id="nav-open" href="#sidebar" menu><span>menu</span></a>
-            </div>
-
-
-
-            <div id="menumobile">
-                <nav class="navigationmobile navigationmobile_pos">
-                    <ul>
-                        <li><a href="#">Компания</a></li>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a href="#">Проектирование</a></li>
-                        <li class="navigationmobile__under"><a href="#">Презентация</a></li>
-                        <li><a href="#">Застройщикам</a></li>
-                        <li><a href="#">Гос заказчикам</a></li>
-                        <li class="navigationmobile__under"><a href="#">Таблет-питание</a></li>
-                        <li><a href="#">Сервис</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="logo-mob logo-mob_pos">
-                <img class="logo-mob__img" src="img/logo-mob.png">
-            </div>
-
+            
 
             <div class="search-find search-find_pos">
                 <div class="search-find__categories">
@@ -135,42 +177,7 @@
 
 
 
-            <!--ДЛЯ ТЕЛЕФОНОВ-->
-            <div class="buttons-mob buttons-mob_pos">
 
-                <div class="search-mobile search-mobile_pos">
-                    <button onclick="mobSearch()" class="search-mobile__loop"><img class="search-mobile__img"
-                            src="img/search.png" alt="loop-img"></button>
-
-                    <form id="dropSearch" class="search-mobile__content search-mobile__content_pos">
-
-                        <input class="search-mobile__text" type="text" placeholder="find">
-                        <input class="search-mobile__sub" type="submit">
-                    </form>
-
-
-
-                </div>
-
-
-
-                <div class="mob-mobile mob-mobile_pos">
-                    <button onclick="myFunction()" class="mob-mobile__dropbtn"></button>
-                    <ul id="myDropdown" class="mob-mobile__content mob-mobile__content_pos">
-                     <li><a href="teplovoye">8 800 333-88-31</a></li>
-                                        <li class="mob-mobile__content-underline"><a href="teplovoye">Звонок бесплатный</a></li>
-                                        <li><a href="teplovoye">Пн-Пт</a></li>
-                                       <li class="mob-mobile__content-underline"><a href="teplovoye">09:00 до 18:00</a></li>
-                                        <li class="mob-mobile__content-underline"><a href="teplovoye">info@stolovay.ru</a></li>
-                                        <li><a href="teplovoye">109428,Москва,</a></li>
-                                        <li><a href="teplovoye">Большая Семеновская 43с2 </a></li>
-                    </ul>
-                  </div>
-                  <button class="basket-mobile basket-mobile_pos">
-                    <p class="basket-mobile__ammount">0</p>
-                    <img class="basket-mobile__img" src="img/card.png" alt="card-img">
-                </button>
-            </div>
 
 
 
@@ -494,9 +501,9 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="swiper__slider1">
-                        <h2 class="swiper__h2">Портфолио</h2>
-                        <h1 class="swiper__h1">Комбинат питания МФТИ</h1>
-                        <h3 class="swiper__h3">Проектирование предприятий питания</h3>
+                        <p class="swiper__h2">Портфолио</p>
+                        <p class="swiper__h1">Комбинат питания МФТИ</p>
+                        <p class="swiper__h3">Проектирование предприятий питания</p>
                         <input type="button" value="Подробнее" class="swiper__btn1 swiper__btn1_pos">
                       </div>
                       <img class="swiper__img" src="img/first.png" alt="Картинка1">
@@ -506,18 +513,18 @@
                     </div>
                     <div class="swiper-slide">
                       <div class="swiper__slider1">
-                        <h2 class="swiper__h2">Портфолио</h2>
-                        <h1 class="swiper__h1">Городская больница им. Филатова</h1>
-                        <h3 class="swiper__h3">Проектирование и комплексное снабжение</h3>
+                        <p class="swiper__h2">Портфолио</p>
+                        <p class="swiper__h1">Городская больница им. Филатова</p>
+                        <p class="swiper__h3">Проектирование и комплексное снабжение</p>
                         <input type="button" value="Подробнее" class="swiper__btn1 swiper__btn1_pos">
                       </div>
                       <img class="swiper__img" src="img/second.png" alt="Картинка2">
                     </div>
                     <div class="swiper-slide">
                       <div class="swiper__slider1">
-                        <h2 class="swiper__h2">Портфолио</h2>
-                        <h1 class="swiper__h1">Ресторан "Седьмое небо"</h1>
-                        <h3 class="swiper__h3">Проектирование и комплексное снабжение</h3>
+                        <p class="swiper__h2">Портфолио</p>
+                        <p class="swiper__h1">Ресторан "Седьмое небо"</p>
+                        <p class="swiper__h3">Проектирование и комплексное снабжение</p>
                         <input type="button" value="Подробнее" class="swiper__btn1 swiper__btn1_pos">
                       </div>
                       <img class="swiper__img1" src="img/third.png" alt="Картинка3">
@@ -872,32 +879,7 @@
             <li>Для горячих цехов</li>
             <li>Все предложения</li>
         </ul>
-        <ul class="column column_pos">
-            <h1 class="column__li1">Оборудование</h1>
-            <li class="column__li">Тепловое</li>
-            <li class="column__li">Холодильное</li>
-            <li class="column__li">Электромеханическое</li>
-            <li class="column__li">Посудомоечное</li>
-            <li class="column__li">Линии раздачи</li>
-            <li class="column__li">Нейтральное</li>
-            <li class="column__li">Для фаст-фуда</li>
-            <li class="column__li">Для залов</li>
-            <li class="column__li">Вспомогательное</li>
-            <li class="column__li">Для магазинов</li>
-        </ul>
-        <ul class="column column_pos">
-            <h1 class="column__li1">Предложения</h1>
-            <li class="column__li">Детским садам и школам</li>
-            <li class="column__li">Для кондитерских</li>
-            <li class="column__li">Для пицерий</li>
-            <li class="column__li">Для магазинов</li>
-            <li class="column__li">Для буфетов</li>
-            <li class="column__li">Для пищеблоков</li>
-            <li class="column__li">Для кафе</li>
-            <li class="column__li">Для горячих цехов</li>
-            <li class="column__li">Все предложения</li>
-
-        </ul>
+        
         <div class="column column_pos">
             <h1 class="column__li1">Контакты</h1>
             <div class="contacts">
