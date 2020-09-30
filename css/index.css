@@ -5793,7 +5793,7 @@ display: none;
 
     .stuck-head_pos {
         margin-left: 20px;
-        padding-top: 25px;
+        padding-top: 22px;
         padding-bottom: 10px;
     }
 
@@ -5808,8 +5808,8 @@ display: none;
     .nav-btn {
         
         position: absolute;
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         background: url("https://i.imgur.com/qPQxa9T.png") orange no-repeat;
         background-position: center center;
         background-size: 60%;
