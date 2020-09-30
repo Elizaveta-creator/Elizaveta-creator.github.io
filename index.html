@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     </script>
+    <script src="https://fian.my.id/marka/static/marka/js/marka.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
     </link>
+    <link rel="stylesheet" href="https://fian.my.id/marka/static/marka/css/marka.css">
     <link rel="stylesheet" src="css/footer-mobile.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -444,12 +446,13 @@
     <div class="content content_pos">
 
 
-        <div class="equipment equipment_pos"  id="equipment">
-            <p class="equipment__text">
-             Оборудование <span class="equipment__arrow"></span>
-            </p>
-            <ul class="list list_pos">
-              <li><a href="teplovoye">Тепловое</a></li>
+        <div class="equipment equipment_pos">
+
+			<div class="button-group button-group_pos">
+			<i id="button-group__icon"></i>
+			<a id="button-group__input" href="">Оборудование</a>
+			  <ul id="dropdown-menu">
+<li><a href="teplovoye">Тепловое</a></li>
               <li><a href="teplovoye">Холодильное</a></li>
               <li><a href="teplovoye">Электромеханическое</a></li>
              <li><a href="teplovoye">Посудомоечное</a></li>
@@ -460,8 +463,10 @@
               <li><a href="teplovoye">Для залов</a></li>
               <li><a href="teplovoye">Вспомогательное</a></li>
               <li><a href="teplovoye">Для магазинов</a></li> 
-            </ul>  
-          </div>
+			  </ul>
+			</div>
+		</div>
+	
 
 
         <div class="first-level first-level_pos">
