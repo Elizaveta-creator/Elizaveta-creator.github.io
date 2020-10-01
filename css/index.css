@@ -225,7 +225,16 @@ body {
     font-size: 14px;
 }
 
+.basket:hover,
+.basket-total_rub:hover,
+.basket-total_sum:hover,
+.basket-img__ammount:hover
 
+ {
+    background-color: orange;
+    color: white;
+    
+}
 .basket-total {
     display: -webkit-box;
     display: -ms-flexbox;
